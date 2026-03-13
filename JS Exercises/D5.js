@@ -176,7 +176,6 @@ for (let i = 0; i < charactersArray.length; i++) {
       default:
         break
     }
-    // console.log(charactersArray[i] === alphabetArray[x])
   }
 }
 
