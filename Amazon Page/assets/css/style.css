@@ -7,10 +7,25 @@ body {
 }
 
 main {
-  padding: 2em;
+  padding: 3em 2em;
+}
+
+.content-wrap,
+nav ul,
+.logo-header {
+  max-width: 1400px;
+  margin: 0 auto;
 }
 .text-center {
   text-align: center;
+}
+
+p {
+  margin: 0;
+}
+
+.margin-div {
+  margin-top: 3em;
 }
 
 .holiday-guides,
@@ -26,6 +41,13 @@ a,
 
 .secondary-bg-color {
   background-color: #364759;
+}
+
+.logo-header img,
+footer img {
+  padding: 1em;
+  width: auto;
+  height: 4em;
 }
 
 .inline-title h2,
@@ -52,20 +74,11 @@ a,
 /*SINGOLE SEZIONI*/
 
 /*HEADER*/
-.logo-header img {
-  padding: 1em;
-  width: auto;
-  height: 4em;
-}
 
 /*NAV BAR*/
-.list-nav-bar {
-  margin: 0;
-}
 
 .list-nav-bar ul {
   padding: 1em;
-  margin: 0;
 }
 
 .list-nav-bar ul li {
@@ -78,26 +91,27 @@ a,
 }
 
 .orange-bg p {
-  margin: 0;
   padding: 0.5em 0;
 }
 
 .holiday-guides {
   background-image: url("../images/bg-image.png");
   background-color: #2f6d5e;
-  margin: 3em 0;
   padding: 3em;
 }
 
-#gift-wrap {
+.holiday-guides h2 {
+  font-size: 2em;
+}
+
+.gift-wrap {
   background-color: #fff;
   padding: 1em 1em;
 }
 
 .img-perfect-gift {
-  max-width: 1300px;
-  margin: 2em auto;
   text-align: justify;
+  margin: 1em 2em;
 }
 
 .img-perfect-gift::after {
@@ -109,7 +123,7 @@ a,
 .img-perfect-gift div {
   display: inline-block;
   width: 300px;
-  height: 350px;
+  height: 400px;
 }
 
 .img-perfect-gift div img {
@@ -118,5 +132,21 @@ a,
 
   object-fit: cover;
   border-radius: 30px;
-  box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+  box-shadow: #0000003d 8px 8px 10px 5px;
+}
+/* FOOTER */
+.backtop {
+  padding: 1em 0;
+}
+
+.footer-wrap {
+  padding: 1em 0;
+}
+
+footer a {
+  font-weight: 700;
+}
+
+footer img {
+  padding-top: 3em;
 }
