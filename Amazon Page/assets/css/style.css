@@ -1,6 +1,10 @@
 /* Your styles here */
 /*GLOBAL*/
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: Arial, Helvetica, sans-serif;
   background-color: #e9edee;
