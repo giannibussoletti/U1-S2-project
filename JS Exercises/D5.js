@@ -139,30 +139,31 @@ const charactersArray = ["g", "n", "u", "z", "d"]
 
 const alphabetArray = [
   "a",
-  " b",
-  " c",
-  " d",
-  " e",
-  " f",
-  " g",
-  " h",
-  " i",
-  " k",
-  " l",
-  " m",
-  " n",
-  " o",
-  " p",
-  " q",
-  " r",
-  " s",
-  " t",
-  " u",
-  " v",
-  " x",
-  " y",
-  " z",
+  "b",
+  "c",
+  "d",
+  "e",
+  "f",
+  "g",
+  "h",
+  "i",
+  "k",
+  "l",
+  "m",
+  "n",
+  "o",
+  "p",
+  "q",
+  "r",
+  "s",
+  "t",
+  "u",
+  "v",
+  "x",
+  "y",
+  "z",
 ]
+
 const charPosition = []
 
 for (let i = 0; i < charactersArray.length; i++) {
@@ -170,8 +171,13 @@ for (let i = 0; i < charactersArray.length; i++) {
     const indexLetter = charactersArray[i] === alphabetArray[x]
     switch (indexLetter) {
       case true:
-        const arrayPosition = charactersArray.indexOf(charactersArray[i])
-        console.log(arrayPosition)
+        charPosition.push(charactersArray[i], x + 1)
+        break
+      default:
+        break
     }
+    // console.log(charactersArray[i] === alphabetArray[x])
   }
 }
+
+console.log(charPosition)
