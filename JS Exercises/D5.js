@@ -65,15 +65,16 @@ const plateGenerator = [6, "A", 4, 7, "Q", 9, "R", "Z", "O", 2, 8, 3, "W", 6, "V
 let stringPlate = [] //singole lettere della targa
 
 for (let i = 0; i < cars.length; i++) {
-  for (let x = 0; x < 7; x++) {
-    const indexPlatePos = Math.floor(Math.random() * plateGenerator.length)
-    stringPlate.push(plateGenerator[indexPlatePos])
+  for (let x = 0; x < 6; x++) {
+    // Doppio ciclo for che per ogni giro principale al suo interno ne ha un altro' che tramite utilizzo della libreria Math
+    const indexPlatePos = Math.floor(Math.random() * plateGenerator.length) // genera prima un numero intero e poi lo moltiplica per la lenght del plateGenerator
+    stringPlate.push(plateGenerator[indexPlatePos]) // questo numero viene poi utilizzato per pushare una lettera o un numero all'interno dell'array stringPlate
   }
-  cars[i].licensePlate = stringPlate.join("")
-  stringPlate = []
+  cars[i].licensePlate = stringPlate.join("") // Un volta finito il ciclo interno che si ripete 6 volte l'array viene unito e viene immesso al'interno degli oggetti
+  stringPlate = [] // l'array poi viene svuotato, perché altrimenti le stringhe si comulerebbro
 }
 
-// console.log(cars)
+console.log(cars)
 
 /* ESERCIZIO 6
     Scrivi del codice per aggiungere un nuovo oggetto in ultima posizione nell'array "cars", rispettando la struttura degli altri elementi.
@@ -88,12 +89,12 @@ const newCar = {
 }
 
 cars.push(newCar)
-// console.log(cars)
+console.log(cars)
 
 for (let i = 0; i < cars.length; i++) {
   delete cars[i].trims.pop()
 }
-// console.log(cars)
+console.log(cars)
 
 /* ESERCIZIO 7
     Scrivi del codice per salvare il primo elemento della proprietà "trims" di ogni auto nel nuovo array "justTrims", sotto definito.
@@ -103,7 +104,7 @@ for (let i = 0; i < cars.length; i++) {
   justTrims.push(cars[i].trims[0])
 }
 
-// console.log(justTrims)
+console.log(justTrims)
 
 /* ESERCIZIO 8
     Cicla l'array "cars" e costruisci un if/else statament per mostrare due diversi messaggi in console. Se la prima lettera della proprietà
@@ -126,7 +127,7 @@ const numericArray = [6, 90, 45, 75, 84, 98, 35, 74, 31, 2, 8, 23, 100, 32, 66, 
 
 let i = 0
 while (numericArray[i] !== 32) {
-  //   console.log(numericArray[i])
+  console.log(numericArray[i])
   i++
 }
 
