@@ -1,1 +1,38 @@
 /* Your styles here */
+/*GLOBAL*/
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #e9edee;
+}
+.text-center {
+  text-align: center;
+}
+
+.holiday-guides,
+.orange-bg,
+a {
+  color: #fff;
+}
+
+.bg-color-hf {
+  background-color: #222f3f;
+}
+
+.secondary-bg-color {
+  background-color: #364759;
+}
+
+.inline-title h2,
+.inline-title h3 {
+  display: inline;
+}
+.inline-title h2 {
+  color: black;
+}
+.inline-title h3 {
+  color: #0b7b68;
+}
+
+.logo-header {
+}
